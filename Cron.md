@@ -5,7 +5,7 @@ O Cron é um `daemon` que executa scripts periodicamente em uma máquina Linux. 
 
 ## Gitlab-CI Cron
 
-O Gitlab-CI por padrão não faz a limpeza das imagens do `docker` que são utilizadas durante os processos de *build* nos repositórios. Sendo assim, para evitar de lotar o HD e a RAM da máquina em que as builds são executas, um *Cronjob* faz a limpeza de todos os *containers* e *imagens* que estão suspensas pelo `docker`. Uma cópia destes scripts estão no repositório [Cron](https://gitlab.com/electricdreams/cron) e eles são da seguinte forma:
+O Gitlab-CI por padrão não faz a limpeza das imagens do `docker` que são utilizadas durante os processos de *build* nos repositórios. Sendo assim, para evitar de lotar o HD e a RAM da máquina em que as builds são executas, um *Cronjob* faz a limpeza de todos os *containers* e *imagens* que estão suspensas pelo `docker`.
 
 ```
 00 02,12 * * * /usr/bin/docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -e MINIMUM_IMAGES_TO_SAVE=1 -e REMOVE_VOLUMES=1 -v /etc:/etc:ro node:10
