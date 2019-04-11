@@ -5,4 +5,5 @@ Esta Wiki apresenta os conceitos e procedimentos de implantação das ferramenta
 3.  [Sonarqube](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Sonarqube)
 4.  [Cron](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Cron)
 5.  [Procedimentos de Deploy](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Deploy)
+6.  [Instalação do Kubernetes no RaspberryPI](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/k8sonpi)
 
