@@ -234,7 +234,7 @@ Se por algum motivo (só Deus sabe qual, mas aconteceu uma vez) o Kubernetes nã
 Instale os pacotes
 
 ```
-sudo apt curl docker-ce ebtables ethtool wget unzip golan-cfssl
+sudo apt curl docker-ce ebtables ethtool wget unzip golang-cfssl
 ```
 
 É necessário permitir conexões em bridge com IPV4
@@ -262,7 +262,7 @@ Instale o CNI
 ```
 export CNI_VERSION="v0.6.0"
 mkdir -p /opt/cni/bin
-curl -L "https://github.com/containernetworking/plugins/releases/download/${CNI_VERSION}/cni-plugins-amd64-${CNI_VERSION}.tgz" | tar -C /opt/cni/bin -xz
+curl -L "https://github.com/containernetworking/plugins/releases/download/${CNI_VERSION}/cni-plugins-arm64-${CNI_VERSION}.tgz" | tar -C /opt/cni/bin -xz
 ```
 
 
@@ -271,7 +271,7 @@ Instale o CRI
 ```
 export CRICTL_VERSION="v1.11.1"
 mkdir -p /opt/bin
-curl -L "https://github.com/kubernetes-incubator/cri-tools/releases/download/${CRICTL_VERSION}/crictl-${CRICTL_VERSION}-linux-amd64.tar.gz" | tar -C /opt/bin -xz
+curl -L "https://github.com/kubernetes-incubator/cri-tools/releases/download/${CRICTL_VERSION}/crictl-${CRICTL_VERSION}-linux-arm64.tar.gz" | tar -C /opt/bin -xz
 ```
 
 Instale o Kubernetes
