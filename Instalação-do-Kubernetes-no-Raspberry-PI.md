@@ -99,3 +99,40 @@ Instale os pacotes do Kubernetes:
 sudo apt install kubelet kubeadm kubectl
 
 ```
+
+
+### CGroups e Systemd
+
+É necessário editar o arquivo do systemd do Kubernetes para adicionar o *cgroup-driver* usado pelo Docker, para isto execute:
+
+
+```
+docker info | grep -i cgroup
+# Cgroup Driver: cgroupfs
+```
+
+Depois abra o arquivo do SystemD:
+
+```
+sudo vim /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+```
+
+E troque a linha:
+
+```
+ExecStart=/usr/bin/kubelet $KUBELET_KUBECONFIG_ARGS $KUBELET_CONFIG_ARGS $KUBELET_KUBEADM_ARGS $KUBELET_EXTRA_ARGS
+```
+
+Por:
+
+```
+ExecStart=/usr/bin/kubelet --cgroup-driver=cgroupfs $KUBELET_KUBECONFIG_ARGS $KUBELET_CONFIG_ARGS $KUBELET_KUBEADM_ARGS $KUBELET_EXTRA_ARGS
+```
+
+Depois recarregue o daemon:
+
+```
+sudo systemctl daemon-reload
+sudo systemctl restart kubelet
+```
+
