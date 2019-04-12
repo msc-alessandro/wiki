@@ -136,3 +136,97 @@ sudo systemctl daemon-reload
 sudo systemctl restart kubelet
 ```
 
+### Configuração do Master
+
+Instale o Kubernetes no master seguindo as mesmas configurações anteriores e execute:
+
+```
+sudo kubeadm init
+```
+
+### Atenção
+
+Caso o Kubernetes reclame de algo durante a instalação você pode desabilitar o *error checking* através do seguinte parâmetro:
+
+```
+sudo kubeadm init --ignore-preflight-errors='SystemVerification'
+```
+
+#### Trava na inicialização
+
+Caso o kubernetes trave com o seguinte erro durante a inicialização:
+
+```
+[kubelet-check] It seems like the kubelet isn't running or healthy.
+[kubelet-check] The HTTP call equal to 'curl -sSL http://localhost:10248/healthz' failed with error: Get http://localhost:10248/healthz: dial tcp 127.0.0.1:10248: connect: connection refused.
+```
+
+Será necessário mudar os seguintes arquivos:
+
+```
+--- /usr/lib/systemd/system/kubelet.service ---
+
+[Unit] 
+
+Description=Kubernetes Kubelet Server 
+Documentation=https://github.com/GoogleCloudPlatform/kubernetes
+
+[Service] 
+
+WorkingDirectory=/var/lib/kubelet
+EnvironmentFile=-/etc/kubernetes/config
+EnvironmentFile=-/etc/kubernetes/kubelet
+ExecStart=/usr/bin/kubelet \
+
+    $KUBE_LOGTOSTDERR \
+
+    $KUBE_LOG_LEVEL \
+
+    $KUBELET_API_SERVER \
+
+    $KUBELET_ADDRESS \
+
+    $KUBELET_PORT \
+
+    $KUBELET_HOSTNAME \
+
+    $KUBE_ALLOW_PRIV \
+
+    $KUBELET_ARGS
+
+Restart=always
+StartLimitInterval=0
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+```
+--- /etc/kubernetes/config ---
+
+KUBE_LOGTOSTDERR="--logtostderr=true"
+KUBE_LOG_LEVEL="--v=0"
+```
+
+```
+--- /etc/kubernetes/kubelet ---
+
+KUBELET_ARGS="--bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --cgroup-driver=cgroupfs --network-plugin=cni --pod-infra-container-image=k8s.gcr.io/pause:3.1"
+```
+
+Depois é preciso dar reload no daemon do Linux e desabilitar os serviços do Kubernetes
+
+```
+systemctl daemon-reload
+systemctl disable kube-apiserver
+systemctl disable kube-controller-manager
+systemctl disable kube-scheduler
+systemctl disable kube-proxy
+
+```
+ 
+
+
+
