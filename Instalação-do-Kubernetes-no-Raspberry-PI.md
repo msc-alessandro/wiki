@@ -226,7 +226,89 @@ systemctl disable kube-scheduler
 systemctl disable kube-proxy
 
 ```
+
+### Mais atenção ainda
+
+Se por algum motivo (só Deus sabe qual, mas aconteceu uma vez) o Kubernetes não conseguir iniciar nem com as configurações acima, recomendo que remova a instalação do Kubernetes que fez para fazer na mão seguindo os passos a seguir:
+
+Instale os pacotes
+
+```
+sudo apt curl docker-ce ebtables ethtool wget unzip golan-cfssl
+```
+
+É necessário permitir conexões em bridge com IPV4
  
+```
+sysctl net.bridge.bridge-nf-call-iptables=1
+```
+
+Se você ja tinha o Docker é necessário limpar o iptables:
+
+```
+iptables -F
+iptables -t nat -F
+```
+
+Depois
+
+```
+systemctl enable docker && systemctl restart docker
+```
 
 
+Instale o CNI
 
+```
+export CNI_VERSION="v0.6.0"
+mkdir -p /opt/cni/bin
+curl -L "https://github.com/containernetworking/plugins/releases/download/${CNI_VERSION}/cni-plugins-amd64-${CNI_VERSION}.tgz" | tar -C /opt/cni/bin -xz
+```
+
+
+Instale o CRI
+
+```
+export CRICTL_VERSION="v1.11.1"
+mkdir -p /opt/bin
+curl -L "https://github.com/kubernetes-incubator/cri-tools/releases/download/${CRICTL_VERSION}/crictl-${CRICTL_VERSION}-linux-amd64.tar.gz" | tar -C /opt/bin -xz
+```
+
+Instale o Kubernetes
+```
+export RELEASE="$(curl -sSL https://dl.k8s.io/release/stable.txt)"
+
+mkdir -p /opt/bin
+cd /opt/bin
+curl -L --remote-name-all https://storage.googleapis.com/kubernetes-release/release/${RELEASE}/bin/linux/amd64/{kubeadm,kubelet,kubectl}
+chmod +x {kubeadm,kubelet,kubectl}
+
+curl -sSL "https://raw.githubusercontent.com/kubernetes/kubernetes/${RELEASE}/build/debs/kubelet.service" | sed "s:/usr/bin:/opt/bin:g" > /etc/systemd/system/kubelet.service
+mkdir -p /etc/systemd/system/kubelet.service.d
+curl -sSL "https://raw.githubusercontent.com/kubernetes/kubernetes/${RELEASE}/build/debs/10-kubeadm.conf" | sed "s:/usr/bin:/opt/bin:g" > /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+systemctl enable kubelet && systemctl start kubelet
+```
+
+Adicione o `/opt/bin` no `$PATH`
+
+```
+export PATH="/opt/bin:$PATH"
+```
+
+## Finalização
+
+Inicie o cluster
+
+```
+kubeadm init --pod-network-cidr=10.244.0.0/16
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+
+Depois da instalação do cluster o terminal vai te instruir como conectar os workers e o master node, para isso é preciso executar o `kubeadm join`  com um comando parecido com o comando abaixo:
+
+```
+kubeadm join 192.168.25.5:6443 --token t2zy9t.nvyz2q57h5aob7xn \
+    --discovery-token-ca-cert-hash sha256:4e0abbee9ddb3f8b13c45ac20c0d72d16d0792c8761e5c286e778793f11e5125 
+```
