@@ -144,7 +144,7 @@ Instale o Kubernetes no master seguindo as mesmas configurações anteriores e e
 sudo kubeadm init
 ```
 
-### Atenção
+#### Atenção
 
 Caso o Kubernetes reclame de algo durante a instalação você pode desabilitar o *error checking* através do seguinte parâmetro:
 
@@ -152,7 +152,7 @@ Caso o Kubernetes reclame de algo durante a instalação você pode desabilitar 
 sudo kubeadm init --ignore-preflight-errors='SystemVerification'
 ```
 
-#### Troubleshooting
+### Troubleshooting
 
 Caso o kubernetes trave com o seguinte erro durante a inicialização:
 
