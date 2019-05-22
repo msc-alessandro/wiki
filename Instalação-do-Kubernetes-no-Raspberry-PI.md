@@ -152,7 +152,7 @@ Caso o Kubernetes reclame de algo durante a instalação você pode desabilitar 
 sudo kubeadm init --ignore-preflight-errors='SystemVerification'
 ```
 
-#### Trava na inicialização
+#### Troubleshooting
 
 Caso o kubernetes trave com o seguinte erro durante a inicialização:
 
@@ -227,7 +227,7 @@ systemctl disable kube-proxy
 
 ```
 
-### Mais atenção ainda
+### Instalação Manual do Kubernetes
 
 Se por algum motivo (só Deus sabe qual, mas aconteceu uma vez) o Kubernetes não conseguir iniciar nem com as configurações acima, recomendo que remova a instalação do Kubernetes que fez para fazer na mão seguindo os passos a seguir:
 
