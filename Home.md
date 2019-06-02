@@ -7,4 +7,6 @@ Esta Wiki apresenta os conceitos e procedimentos de implantação das ferramenta
 5.  [Procedimentos de Deploy](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Deploy)
 6.  [Instalação do Kubernetes no RaspberryPI](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Instalação-do-Kubernetes-no-Raspberry-PI)
 7.  [Caracterização do Hardware da Família RaspberryPI](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Instalação-do-Kubernetes-no-Raspberry-PI)
+8.  [Topologia do Cluster](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Instalação-do-Kubernetes-no-Raspberry-PI)
+9.  [Testes de Carga](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Instalação-do-Kubernetes-no-Raspberry-PI)
 
