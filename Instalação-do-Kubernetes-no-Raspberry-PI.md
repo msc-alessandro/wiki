@@ -100,6 +100,13 @@ sudo apt install kubelet kubeadm kubectl
 
 ```
 
+**Instale os pacotes do Kubernetes com versão especifica no Raspberry 1:**
+
+```
+sudo apt install kubelet=1.5.6-00 kubectl=1.5.6-00 kubeadm=1.5.6-00
+
+```
+
 
 ### CGroups e Systemd
 
