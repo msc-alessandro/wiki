@@ -19,4 +19,49 @@
 * **Compatibilidade com Binários Compilados Manualmente:** Compatível - Testado até a versão 1.14.1
 
 
+Para compilar para esses sistemas.
+
+```
+sudo apt-get install gcc-arm-linux-gnueabi 
+```
+
+É necessário alterar o arquivo de compilação do Kubernetes ` hack/lib/golang.sh`  e adicionar flags para tornar possível o cross-compiling para ARMV6 e ARMHF
+
+Mudar a seção:
+```
+export GOOS=${platform%/}
+export GOARCH=${platform##/}
+```
+
+Para:
+```
+export GOOS=${platform%/}
+export GOARCH=${platform##/}
+export GOARM=5 
+```
+
+E depois alterar o *cross-compiler* para:
+
+```
+case "${platform}" in
+"linux/arm")
+export CGO_ENABLED=1
+export CC=arm-linux-gnueabi-gcc
+```
+
+Para compilar
+```
+make all WHAT=cmd/kube-proxy KUBE_VERBOSE=5 KUBE_BUILD_PLATFORMS=linux/arm
+make all WHAT=cmd/kubelet KUBE_VERBOSE=5 KUBE_BUILD_PLATFORMS=linux/arm
+make all WHAT=cmd/kubectl KUBE_VERBOSE=5 KUBE_BUILD_PLATFORMS=linux/arm
+```
+
+
+## Raspberry PI 1 A+ (v1.0)
+
+Não encontrei esse Raspberry para venda e nem alguem que possua essa primeira versão, mas não acredito que consiga rodar o sistema aqui pois a capacidade de hardware é muito baixa.
+
+
+
+
 
