@@ -2,8 +2,7 @@
 
 ![Kubernetes_Topologia_Casa](uploads/136eabe17363c664ce539fdc74575cbc/Kubernetes_Topologia_Casa.png)
 
-
-![my-first-document](uploads/7b362561aa71fa1c2ca6e34f6e4e0876/my-first-document.png)
+![topologia__1_](uploads/5c55d72ec9c30a911f96d3381a8a783a/topologia__1_.jpg)
 
 ## Configurações
 
