@@ -20,11 +20,11 @@
 
 ### Variáveis Independentes
 
-1.  Carga máxima (Razão - Porcentagem)
-2.  Usuários (Inteiro - Número de usuários)
-3.  Rampa (Inteiro - Em segundos)
-4.  Tempo de Resposta Tolerável (Inteiro - )
-5.  Número de Agentes.
+1.  Carga máxima.
+2.  Usuários.
+3.  Rampa.
+4.  Tempo de Resposta Tolerável.
+5.  Número de Agentes. 
 
 
 ### Variáveis Dependentes
