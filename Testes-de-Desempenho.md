@@ -23,7 +23,7 @@
 1.  Carga máxima.
 2.  Usuários.
 3.  Rampa.
-4.  Tempo de Resposta Tolerável.
+4.  **Tempo de Resposta Tolerável.**
 5.  Número de Agentes. 
 
 
