@@ -2,8 +2,7 @@
 
 ![Kubernetes_Topologia_Casa](uploads/136eabe17363c664ce539fdc74575cbc/Kubernetes_Topologia_Casa.png)
 
-![topologia__1_](uploads/5c55d72ec9c30a911f96d3381a8a783a/topologia__1_.jpg)
-
+![topologia__2_](uploads/cdaa7dfe7ac813a2c1231ba0caf65e5e/topologia__2_.jpg)
 ## Configurações
 
 ### Anima - Master
