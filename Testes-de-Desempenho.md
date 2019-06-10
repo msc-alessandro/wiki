@@ -13,7 +13,7 @@
 
 ### Subtipos
 
-1.  Teste de Carga
+1.  Teste de Resistencia
 2.  Teste de Estresse
 3.  Teste de Capacidade
 
