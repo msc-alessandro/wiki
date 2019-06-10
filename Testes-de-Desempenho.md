@@ -29,8 +29,8 @@
 
 ### Variáveis Dependentes
 
-1. Usuários Ativos.
-2. Tempo Médio de Resposta.
+1. Usuários Atendidos.
+2. Tempo Médio de Resposta Com Sucesso.
 3. Porcentagem de Erros.
 4. Throughput.
 
