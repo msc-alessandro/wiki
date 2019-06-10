@@ -48,7 +48,7 @@ O JMeter oferece a possibilidade de utilizar a ferramenta como CLI ou GUI para a
 O grupo [Kubernauts](https://github.com/kubernauts) disponiblizou abertamente um operador para realizar testes de Carga no Kubernetes utilizando o JMeter. Essa configuração utiliza o InfluxDB para criar uma série temporal dos dados que são gerados por Pods do JMeter nos nós do Kubernetes, a série temporal dos dados então é lida por um Pod do Grafana para apresentar os dados em uma interface mais amigável.
 
 
-![jmeter](uploads/0d3244d018e24e1d7a02a32e1f35d889/jmeter.png)
+![my-first-document__1_](uploads/0909dca0d3119ed486f58782101f317c/my-first-document__1_.png)
 
 ![grafana1](uploads/39c98572515556240067a8a8d0e6843b/grafana1.png)
 
