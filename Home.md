@@ -9,5 +9,7 @@ Esta Wiki apresenta os conceitos e procedimentos de implantação das ferramenta
 7.  [Caracterização do Hardware da Família Raspberry PI](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Caracteriza%C3%A7%C3%A3o-da-Fam%C3%ADlia-de-Hardware-Raspberry-PI)
 8.  [Topologia do Cluster (Casa)](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Topologia-do-Cluster)
 9.  [Compatibilidade dos Dispositivos Raspberry PI com o Kubernetes](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Compatibilidade-dos-Dispositivos-Raspberry-PI-com-o-Kubernetes)
-10. [Testes de Desempenho](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Testes-de-Desempenho)
+10. [Testes de Desempenho - Definição](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Testes-de-Desempenho)
+10. [Testes de Desempenho - Execução](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Testes-de-Desempenho-Execucao)
+
 
