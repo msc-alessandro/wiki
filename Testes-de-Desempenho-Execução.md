@@ -131,7 +131,7 @@
 
 ```
 
-### Configuração do Teste
+### Configuração do Teste 1
 
 #### Entrada
 
@@ -153,4 +153,27 @@
 ![Captura_de_tela_de_2019-06-25_09-47-45](uploads/a14f853c2d53e7edd8dc2976d9a19865/Captura_de_tela_de_2019-06-25_09-47-45.png)
 
 
+#### Configuração de Teste 2
 
+#### Entrada
+
+* Número de Usuários: 1000
+* Tempo de Rampa: 100 segundos
+* Tipo de Resposta Aceita: 200 (OK)
+* Tempo de Execução: 2 minutos
+
+
+#### Resultados
+
+* Número de Requisições: 7176
+* % Erro: 1,37%
+* Tempo de Resposta Médio: 1606 ms
+
+
+![tela1](uploads/cb3a2796e9c252acf2fcabb724a31c52/tela1.png)
+
+![tela2](uploads/5b751c1e93eef28f8cde72e5ebe57e38/tela2.png)
+
+![tela3](uploads/cf537468559bc5b3e6fe853563959ed4/tela3.png)
+
+![tela4](uploads/5bdbfb9e0a7ecb2f88b15ceb6a1dc39d/tela4.png)
