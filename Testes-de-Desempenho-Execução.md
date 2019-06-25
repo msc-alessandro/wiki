@@ -64,11 +64,11 @@
     "progressDeadlineSeconds": 600
   },
   "status": {
-    "observedGeneration": 1,
-    "replicas": 1,
-    "updatedReplicas": 1,
-    "readyReplicas": 1,
-    "availableReplicas": 1,
+    "observedGeneration": 3,
+    "replicas": 3,
+    "updatedReplicas": 3,
+    "readyReplicas": 3,
+    "availableReplicas": 3,
     "conditions": [
       {
         "type": "Available",
