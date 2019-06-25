@@ -130,3 +130,27 @@
 }
 
 ```
+
+### Configuração do Teste
+
+#### Entrada
+
+* Número de Usuários: 100
+* Tempo de Rampa: 10 segundos
+* Tipo de Resposta Aceita: 200 (OK)
+* Tempo de Execução: 2 minutos
+
+![Captura_de_tela_de_2019-06-25_09-39-31](uploads/00fa8822559fb6bf9546f100e47754e3/Captura_de_tela_de_2019-06-25_09-39-31.png)
+
+
+#### Resultados
+
+* Número de Requisições: 7176
+* % Erro: 1,37%
+* Tempo de Resposta Médio: 1606 ms
+
+
+![Captura_de_tela_de_2019-06-25_09-47-45](uploads/a14f853c2d53e7edd8dc2976d9a19865/Captura_de_tela_de_2019-06-25_09-47-45.png)
+
+
+
