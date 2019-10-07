@@ -11,7 +11,8 @@ Esta Wiki apresenta os conceitos e procedimentos de implantação das ferramenta
 9.  [Compatibilidade dos Dispositivos Raspberry PI com o Kubernetes](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Compatibilidade-dos-Dispositivos-Raspberry-PI-com-o-Kubernetes)
 10. [Testes de Desempenho - Definição](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Testes-de-Desempenho)
 11. [Testes de Desempenho - Execução](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Testes-de-Desempenho-Execução)
-12. [Arquitetura de Gateway do Thingsboard](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Thingsboard-Gateway)
+12. [Kubelet Config](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Kubelet-Config)
+13. [Arquitetura de Gateway do Thingsboard](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Thingsboard-Gateway)
 
 
 
