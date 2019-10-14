@@ -126,6 +126,11 @@ Os números utilizados foram:
 
 ### Teste 0
 
+
+* RPS: 10
+* Max Response Time (ms): 100
+* Threads: 1
+
 #### Summary
 
 ![test_0_summary](uploads/e2d6d6162cff0b59b961b5b2c87ac2e7/test_0_summary.png)
@@ -145,6 +150,10 @@ Os números utilizados foram:
 
 ### Teste 1
 
+* RPS: 10
+* Max Response Time (ms): 1000
+* Threads: 10
+
 #### Summary
 
 ![test_1_summary](uploads/f3d03685c5a955d2a051d43b5b224d80/test_1_summary.png)
@@ -162,6 +171,10 @@ Os números utilizados foram:
 ![test_1_transactions](uploads/9c55fd136235b471e77e7ba202db24bc/test_1_transactions.png)
 
 ### Teste 2
+
+* RPS: 10
+* Max Response Time (ms): 10000
+* Threads: 100
 
 #### Summary
 
@@ -181,6 +194,11 @@ Os números utilizados foram:
 
 ### Teste 3
 
+* RPS: 100
+* Max Response Time (ms): 100
+* Threads: 10
+
+
 #### Summary
 
 ![test_3_summary](uploads/dad6a6681dbd4235e158a02222699597/test_3_summary.png)
@@ -199,6 +217,10 @@ Os números utilizados foram:
 
 ### Teste 4
 
+* RPS: 100
+* Max Response Time (ms): 1000
+* Threads: 100
+
 #### Summary
 
 ![test_4_summary](uploads/cee313f8865309959b1566c285f8475e/test_4_summary.png)
@@ -216,6 +238,10 @@ Os números utilizados foram:
 ![test_4_transactions](uploads/44ca92f9f08a8ca8ac4079b7f9004da0/test_4_transactions.png)
 
 ### Teste 5
+
+* RPS: 100
+* Max Response Time (ms): 10000
+* Threads: 1000
 
 
 #### Summary
@@ -236,6 +262,10 @@ Os números utilizados foram:
 
 ### Teste 6
 
+* RPS: 1000
+* Max Response Time (ms): 100
+* Threads: 100
+
 #### Summary
 
 ![test_6_summary](uploads/cc47da1d78f64146e34b1fcf639c025a/test_6_summary.png)
@@ -253,6 +283,10 @@ Os números utilizados foram:
 ![test_6_transactions](uploads/1bfd8cc2a42d834c0e09efa5796c8a09/test_6_transactions.png)
 
 ### Teste 7
+
+* RPS: 1000
+* Max Response Time (ms): 1000
+* Threads: 1000
 
 #### Summary
 
@@ -273,6 +307,10 @@ Os números utilizados foram:
 
 
 ### Teste 8
+
+* RPS: 1000
+* Max Response Time (ms): 10000
+* Threads: 10000
 
 #### Summary
 
