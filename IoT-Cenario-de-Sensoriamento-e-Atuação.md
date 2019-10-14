@@ -1,0 +1,1 @@
+![iot---sensing-and-actuating__2_](uploads/2eefa605f8521c87a12befd336ba7a9b/iot---sensing-and-actuating__2_.png)
