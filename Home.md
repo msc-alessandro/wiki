@@ -13,6 +13,7 @@ Esta Wiki apresenta os conceitos e procedimentos de implantação das ferramenta
 11. [Testes de Desempenho - Execução](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Testes-de-Desempenho-Execução)
 12. [Kubelet Config](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Kubelet-Config)
 13. [Arquitetura de Gateway do Thingsboard](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Thingsboard-Gateway)
+14. [Novos Testes de Desempenho](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Nova-Execu%C3%A7%C3%A3o-de-Testes-de-Desempenho)
 
 
 
