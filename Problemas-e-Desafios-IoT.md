@@ -1,12 +1,12 @@
 ## Concerns
 
-### **Citados em: A Scalable Distributed Architecture Towards Unifying IoT Applications**
+### **Retirado de: A Scalable Distributed Architecture Towards Unifying IoT Applications**
 *  Heterogeneity
 *  Scalability
 *  Interoperability
 *  Security & Privacy
 
-### **Citado de: A Scalable Framework for Provisioning Large-Scale IoT Deployments**
+### **Retirado de: A Scalable Framework for Provisioning Large-Scale IoT Deployments**
 
 *  Atualização de software/deploy de novas funcionalidades
 
@@ -21,7 +21,7 @@ the business logic onto devices. In the context of our work, we refer to these d
 IoT gateways.
 
 
-### **Citado de: A Simulation Platform for Large-Scale Internet of Things Scenarios in Urban Environments**
+### **Retirado de: A Simulation Platform for Large-Scale Internet of Things Scenarios in Urban Environments**
 
 
 *  Quantidade de conexões
@@ -61,7 +61,7 @@ on a server with 2 GHz Xeon CPU, 16 GB RAM, Ubuntu
 GNU/Linux operating system.
 
 
-### **Capillary Networks - Bridging the Cellular and loT Worlds**
+### **Retirado de: Capillary Networks - Bridging the Cellular and loT Worlds**
 
 
 > Cellular communication technologies can play a crucial
@@ -95,3 +95,50 @@ more constrained environments without hardware virtualization
 support, such as in local CGWs.
 
 
+
+### **Retirado de: Challenges and Opportunities in Edge Computing**
+
+> Research in micro operating systems or microkernels can
+provide inroads to tackling challenges related to deployment
+of applications on heterogeneous edge nodes. Given
+that these nodes do not have substantial resources like
+in a server, the general purpose computing environment
+that is facilitated on the edge will need to exhaust fewer
+resources. The benefits of quick deployment, reduced boot
+up times and resource isolation are desirable [47]. There is
+preliminary research suggesting that mobile containers that
+multiplex device hardware across multiple virtual devices
+can provide similar performance to native hardware [48].
+Container technologies, such as Docker31 are maturing and
+enable quick deployment of applications on heterogeneous
+platforms. More research is required to adopt containers as
+a suitable mechanism for deploying applications on edge
+nodes
+
+
+### **Retirado de: End-to-End Management of IoT Applications**
+
+
+![savi-iot](uploads/4708aa3bff30b6f7e43732174ceea191/savi-iot.png)
+
+> Aggregators (i.e., IoT gateways) are located outside of
+the cloud and may be deployed on single board computers
+(e.g., Raspberry PIs), mini computers, or smart devices
+(e.g., smart phones, TVS or refrigerators) to provide management,
+connectivity, and data preprocessing for sensors’ data. 
+The main responsibility of IoT middleware is to facilitate such functionalities at aggregators.
+A worker node of a cluster based data processing platform
+may be deployed on aggregators (i.e., Cluster worker).
+An example for this can be a worker node of a Kafka3
+cluster that is responsible for in-place data cleaning and
+aggregation. The Aggregator Autonomic Manager component
+is a part of the autonomic management system
+which is responsible for monitoring performance metrics
+of aggregators and scale related microservices if needs
+be. IoT Control Services are the control services used by
+the autonomic manager to scale or reconfigure microservices.
+IoT Gateway Microservices are the part of the IoT
+application that implements application functionalities at
+this layer. For example, in our sample implementation of
+the IoT application, we deploy Kafka as microservices at
+Aggregators.
