@@ -75,6 +75,17 @@ spec:
 > For a single-threaded program, a cpu usage of 0.1 means that if you could freeze the machine at a random moment in time, and look at what each core is doing, there is a 1 in 10 chance that your single thread is running at that instant. The number of cores on the machine does not affect the meaning of 0.1. For a container with multiple threads, the container's usage is the sum of its thread's usage (per previous definition.) There is no guarantee about which core you run on, and you might run on a different core at different points in your container's lifetime. A cpu limit of 0.1 means that your usage is not allowed to exceed 0.1 for a significant period of time. A cpu request of 0.1 means that the system will try to ensure that you are able to have a cpu usage of at least 0.1, if your thread is not blocking often. 
 
 
+
+#### Tamanho de Envio
+
+
+```
+Size in bytes: 850
+Sent bytes:114
+Headers size in bytes: 238
+Body size in bytes: 612
+```
+
 ## Número de Threads
 
 Para calcular o número de threads utilizou-se a seguinte expressão:
