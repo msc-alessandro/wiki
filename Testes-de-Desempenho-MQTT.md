@@ -7,7 +7,7 @@ Execução dos testes de desempenho usando o protocola AMQP juntamente com o Rab
 *  RabbitMQ
 *  Java
 *  RabbitMQ Perf Test
-
+*  Python 3
 
 ## Configuração do Cluster
 
@@ -271,3 +271,5 @@ spec:
 ```
 
 #### Resultados
+
+![rabbitmq-test3](uploads/a1954901e6842a7671bbee63e2a6a9a2/rabbitmq-test3.png)
