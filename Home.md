@@ -17,6 +17,7 @@ Esta Wiki apresenta os conceitos e procedimentos de implantação das ferramenta
 15. [Cenário de Sensoriamento de Atuação](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/IoT-Cenario-de-Sensoriamento-e-Atua%C3%A7%C3%A3o)
 16. [Problemas e Desafios IoT](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Problemas-e-Desafios-IoT)
 17. [Testes de Desempenho MQTT](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Testes-de-Desempenho-MQTT)
+17. [Testes de Desempenho MQTT JMeter](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Testes-de-Desempenho-MQTT-JMeter)
 
 
 
