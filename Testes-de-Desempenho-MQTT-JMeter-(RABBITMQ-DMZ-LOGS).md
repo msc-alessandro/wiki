@@ -191,6 +191,7 @@ spec:
 
 ## Payload
 
+*  Mensagem em Hexadecimal de 850 Bytes, para ter o mesmo payload da página inicial do NGINX
 
 ```
 4d a9 71 00 b5 69 11 f8 59 50 ec 3a 73 ba 37 d1 
