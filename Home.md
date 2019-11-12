@@ -19,6 +19,7 @@ Esta Wiki apresenta os conceitos e procedimentos de implantação das ferramenta
 17. [Testes de Desempenho MQTT](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Testes-de-Desempenho-MQTT)
 18. [Testes de Desempenho MQTT JMeter](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Testes-de-Desempenho-MQTT-JMeter)
 19. [Testes de Desempenho HTTP JMeter (NGINX DMZ LOGS)](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Testes-de-Desempenho-HTTP-JMeter-(NGINX---DMZ---LOGS))
+20. [Testes de Desempenho MQTT JMeter (RABBIT DMZ LOGS)](https://www.mrdevops-gitlab.com/plataforma-de-desenvolvimento-continuo-para-iot/chef/wikis/Testes-de-Desempenho-MQTT-JMeter-(RABBITMQ-DMZ-LOGS))
 
 
 
